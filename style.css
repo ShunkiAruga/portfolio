@@ -1,28 +1,35 @@
+/*フォント、余白*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');* {
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
 
+/*背景*/
 body {
-    background: linear-gradient(#741e87, #3c1c3d);
+    background: linear-gradient(#741e87, #956096);
 }
 
+/*文字*/
 section {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 80px 100px;
-    color: #f8f8f8;
+    color: #ffffff;
 }
 
+/*小見出し*/
 .section-title {
     font-size: 8rem;
     font-weight: 1;
+    font-weight: 40;
     margin-bottom: 50px;
-    text-indent: -500px;
+    text-indent: -650px;
+    font-family: "Courgette", serif;
 }
 
 .container{
@@ -32,11 +39,16 @@ section {
     flex-direction: column;
 }
 
+/*タイトル*/
 .main-title {
     font-size: 8rem;
-    font-weight: 1;
     margin-bottom: 50px;
-    font-family: "Courgette", serif;
+}
+
+/*タイトルのサイズ*/
+.section-title {    
+    font-size: 4rem;
+    margin-bottom: 80px;
 }
 
 .content { 
@@ -46,14 +58,16 @@ section {
     align-items: center;
 }
 
-.content .image {   /*画像サイズ*/
+/*画像サイズ*/
+.content .image {
     position: relative;
     width: 600px;
     height: 400px;
     overflow: hidden;
 }
 
-.content .image img {   /*画像*/
+/*画像*/
+.content .image img {
     position: absolute;
     top: 0;
     left: 0;
@@ -64,14 +78,19 @@ section {
     z-index: 10;
 }
 
-.content .text-box {    /*テキストカード*/
+
+/*section1*/
+/*テキストカード*/
+.content .text-box {    
     z-index: 20;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.3);
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     border-left: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 15px;
     box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
     padding: 40px;
+    padding-top: 20px;
+    padding-bottom: 10px;
     max-width: 400px;
     transform: translate(-80px, 50px);
     backdrop-filter: blur(20px);
@@ -88,78 +107,182 @@ section {
     font-size: 20px;
 }
 
-/* section2 */
-.section-title {    /*タイトルのサイズ*/
-    font-size: 3rem;
-    margin-bottom: 80px;
+.content .text-box .引用 {     /*引用*/
+    font-size: 14px;
+    padding-top: 17px;
 }
 
-.info-text {    /*テキストボックス小見出し*/
-    font-size: 1.8rem;
+
+/*section2*/
+/*テキストカード*/
+.content .text-box2 {    
+    z-index: 20;
+    background: rgba(255, 255, 255, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    max-width: 400px;
+    transform: translate(-80px, 50px);
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    border-radius: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.content .text-box2 h3 {     /*テキスト小見出し*/
+    font-size: 2rem;
     margin-bottom: 10px;
 }
 
-.info {
-    width: 700px;
-    margin-left: 50px;
+.content .text-box2 p {     /*テキスト*/
+    font-size: 20px;
 }
 
-/* section3 */
-.sec-03 {
-    margin-bottom: 100px;
+.content .text-box .引用 {     /*引用*/
+    font-size: 14px;
+    padding-top: 17px;
 }
 
-.card {     /*カードテキスト*/
+.content .text-box2 .引用 {     /*引用*/
+    font-size: 14px;
+    padding-top: 17px;
+}
+
+
+/*section3*/
+/*テキストカード*/
+.content .text-box3 {    
     z-index: 20;
-    background: rgba(255, 255, 255, 0.1);
-    max-width: 380px;
-    height: 600px;
+    background: rgba(255, 255, 255, 0.3);
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     border-left: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 15px;
     box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(20px);;
+    padding: 40px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    max-width: 400px;
+    transform: translate(-80px, 50px);
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    border-radius: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.card2 {     /*カードテキスト*/
+.content .text-box3 h3 {     /*テキスト小見出し*/
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.content .text-box3 p {     /*テキスト*/
+    font-size: 20px;
+}
+
+.content .text-box3 .引用 {     /*引用*/
+    font-size: 14px;
+    padding-top: 17px;
+}
+
+
+/*section4*/
+/*テキストカード*/
+.content .text-box4 {    
     z-index: 20;
-    background: rgba(255, 255, 255, 0.1);
-    max-width: 380px;
-    height: 600px;
+    background: rgba(255, 255, 255, 0.3);
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     border-left: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 15px;
     box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(20px);;
+    padding: 40px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    max-width: 400px;
+    transform: translate(-80px, 50px);
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    border-radius: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.card .card-text3 {
-    width: 380px;
-    height: 600px;
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-/*
-.card .card-text3 {     /*カード内アニメーション
-    padding: 20px;
-    transform: translateY(200px);
-    opacity: 0;
-    transition: 0.5s;
-}
-*/
-.card:hover .card-text3 {   /*カード内アニメーション*/
-    transform: translateY(0);
-    opacity: 1;
+.content .text-box4 h3 {     /*テキスト小見出し*/
+    font-size: 2rem;
+    margin-bottom: 10px;
 }
 
-.card .card-text3 h3 {     /*h3タグ*/
-    font-size: 1.8rem;
-    z-index: 1;
+.content .text-box4 p {     /*テキスト*/
+    font-size: 20px;
 }
 
-.card .card-text3 p {       /*カード内テキスト*/
-    font-weight: 300;
+.content .text-box4 .引用 {     /*引用*/
+    font-size: 14px;
+    padding-top: 17px;
+}
+
+
+/*section5*/
+/*テキストカード*/
+.content .text-box5 {    
+    z-index: 20;
+    background: rgba(255, 255, 255, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    max-width: 400px;
+    transform: translate(-80px, 50px);
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    border-radius: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.content .text-box5 h3 {     /*テキスト小見出し*/
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.content .text-box5 p {     /*テキスト*/
+    font-size: 20px;
+}
+
+.content .text-box5 .引用 {     /*引用*/
+    font-size: 14px;
+    padding-top: 17px;
+}
+
+
+/*section6*/
+/*テキストカード*/
+.content .text-box6 {    
+    z-index: 20;
+    background: rgba(255, 255, 255, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    max-width: 400px;
+    transform: translate(-80px, 50px);
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    border-radius: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.content .text-box6 h3 {     /*テキスト小見出し*/
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.content .text-box6 p {     /*テキスト*/
+    font-size: 20px;
+}
+
+.content .text-box6 .引用 {     /*引用*/
+    font-size: 14px;
+    padding-top: 17px;
 }
