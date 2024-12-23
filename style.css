@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: linear-gradient(#741e87, #3c1c3d);
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 100px;
+    color: #f8f8f8;
+}
+
+.section-title {
+    font-size: 8rem;
+    font-weight: 1;
+    margin-bottom: 50px;
+    text-indent: -500px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-title {
+    font-size: 8rem;
+    font-weight: 1;
+    margin-bottom: 50px;
+    font-family: "Courgette", serif;
+}
+
+.content { 
+    width: 1150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content .image {   /*画像サイズ*/
+    position: relative;
+    width: 600px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.content .image img {   /*画像*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    z-index: 10;
+}
+
+.content .text-box {    /*テキストカード*/
+    z-index: 20;
+    background: rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    max-width: 400px;
+    transform: translate(-80px, 50px);
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    border-radius: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.content .text-box h3 {     /*テキスト小見出し*/
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.content .text-box p {     /*テキスト*/
+    font-size: 20px;
+}
+
+/* section2 */
+.section-title {    /*タイトルのサイズ*/
+    font-size: 3rem;
+    margin-bottom: 80px;
+}
+
+.info-text {    /*テキストボックス小見出し*/
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.info {
+    width: 700px;
+    margin-left: 50px;
+}
+
+/* section3 */
+.sec-03 {
+    margin-bottom: 100px;
+}
+
+.card {     /*カードテキスト*/
+    z-index: 20;
+    background: rgba(255, 255, 255, 0.1);
+    max-width: 380px;
+    height: 600px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(20px);;
+}
+
+.card2 {     /*カードテキスト*/
+    z-index: 20;
+    background: rgba(255, 255, 255, 0.1);
+    max-width: 380px;
+    height: 600px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(20px);;
+}
+
+.card .card-text3 {
+    width: 380px;
+    height: 600px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+/*
+.card .card-text3 {     /*カード内アニメーション
+    padding: 20px;
+    transform: translateY(200px);
+    opacity: 0;
+    transition: 0.5s;
+}
+*/
+.card:hover .card-text3 {   /*カード内アニメーション*/
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.card .card-text3 h3 {     /*h3タグ*/
+    font-size: 1.8rem;
+    z-index: 1;
+}
+
+.card .card-text3 p {       /*カード内テキスト*/
+    font-weight: 300;
+}
