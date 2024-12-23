@@ -139,12 +139,6 @@ section {
 
 .content .text-box2 p {     /*テキスト*/
     font-size: 20px;
-}
-
-.content .text-box .引用 {     /*引用*/
-    font-size: 14px;
-    padding-top: 17px;
-}
 
 .content .text-box2 .引用 {     /*引用*/
     font-size: 12px;
